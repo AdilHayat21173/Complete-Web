@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- percentage and pixel are the two units of measurement in CSS. Percentage is a relative unit that is based on the size of the parent element. -->
+    <!-- while pixel is an absolute unit that represents a fixed size. -->
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+
+    
+    <!-- - vh (Viewport Height) is based on the height of the browser window.
+    If the browser window height changes, the element's height changes accordingly.
+    - vw (Viewport Width) is based on the width of the browser window.
+    If the browser window width changes, the element's width changes accordingly. -->
+    <!-- When using vw, changing the height of the browser window does not affect the width of the element. Only changes to the window width affect it.
+    When using vh, changing the width of the browser window does not affect the height of the element. Only changes to the window height affect it. -->
+
+    <div class="box">
+
+    </div>
+
+    <div class="box1">
+
+    </div>
+
+    <!-- em  -->
+    <div class="parent1">
+    Parent Text
+
+    <p class="child1">
+        Child Text
+    </p>
+    </div>
+
+    <!-- rem -->
+    <div class="parent2">
+        Parent Text
+
+        <p class="child2">
+            Child Text
+        </p>
+
+    </div>
+
+    <!-- ch unit -->
+     <!-- ch unit is based on the width of the "0" (zero) character in the current font. It is often used for setting widths of elements that contain text, as it provides a way to size elements relative to the font size. -->
+    <h1>units of the css</h1>
+
+    <!-- lh unit -->
+    <!-- lh unit is based on the line height of the current element. It is often used for setting vertical spacing between lines of text, as it provides a way to size elements relative to the line height. -->
+     <p class="lh">This is a paragraph with line height set using the lh unit. The spacing between lines will adjust based on the line height of the current element.</p>
+</body>
+</html>

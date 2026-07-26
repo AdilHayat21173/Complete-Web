@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ============================
+        HTML & BODY
+============================ */
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    font-family:'Poppins',sans-serif;
+
+    background-color:#f5f5f5;
+
+}
+
+.parent{
+    width: 500px;
+    height:400px;
+    background-color:lightblue;
+}
+.child{
+    width: 50%;
+    height:50%;
+    background-color:red;
+}
+
+
+/* vh and vw */
+.box{
+    width: 50vw;
+    height: 50vh;
+    background-color:green;
+}
+
+.box1{
+    width:50vw;
+    height:50vw;
+    background-color:yellow;
+}
+
+/* em */
+.parent1{
+    width: 500px;
+    height:400px;
+    font-size: 16px;
+    background-color:lightblue;
+
+}
+
+.child1{
+    font-size: 1.25em; /* 1.25 * 16px = 20px */
+}
+
+/* rem */
+.parent2{
+    width: 500px;
+    height:400px;
+    font-size: 16px;
+    background-color:lightblue;
+
+}
+
+.child2{
+    font-size: 1.25rem; /* 1.25 * 16px = 20px */
+}   
+
+
+/* ch */
+h1{
+    font-size: 10ch; /* 10 * width of "0" character */
+    color:blue;
+}
+
+/* lh */
+/* 2 lh mean two line space from top  */
+.lh{
+    margin-top: 2lh; /* 2 * line height of the current element */
+}
