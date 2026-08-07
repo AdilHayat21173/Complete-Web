@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+  <div class="rail">
+    <button id="addBtn" title="Add new call" aria-label="Add">+</button>
+    <button id="upBtn" title="Previous" aria-label="Previous">&#8593;</button>
+    <button id="downBtn" title="Next" aria-label="Next">&#8595;</button>
+  </div>
+
+  <div>
+    <div class="card-wrap" id="cardWrap">
+
+      <div class="stack-shadow s2"></div>
+      <div class="stack-shadow s1"></div>
+      <div class="card" id="card"></div>
+
+    </div>
+    
+    <div class="idx-label" id="idxLabel"></div>
+  </div>
+
+  <div class="dots" id="dots">
+    <div class="dot black" data-cat="Emergency" title="Emergency"></div>
+    <div class="dot purple" data-cat="Urgent" title="Urgent"></div>
+    <div class="dot orange" data-cat="Important" title="Important"></div>
+    <div class="dot teal" data-cat="No Rush" title="No Rush"></div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3>New Call</h3>
+    <div class="field">
+      <label>Image URL</label>
+      <input id="fImage" type="text" placeholder="https://example.com/photo.jpg">
+    </div>
+    <div class="field">
+      <label>Full Name</label>
+      <input id="fName" type="text" placeholder="Enter full name">
+    </div>
+    <div class="field">
+      <label>Home Town</label>
+      <input id="fTown" type="text" placeholder="Enter home town">
+    </div>
+    <div class="field">
+      <label>Purpose</label>
+      <input id="fPurpose" type="text" placeholder="e.g., Quick appointment note">
+    </div>
+    <div class="field">
+      <label>Category</label>
+      <div class="cats" id="cats">
+        <label class="cat" data-color="black"><input type="radio" name="cat" value="Emergency"> Emergency</label>
+        <label class="cat" data-color="orange"><input type="radio" name="cat" value="Important"> Important</label>
+        <label class="cat" data-color="purple"><input type="radio" name="cat" value="Urgent"> Urgent</label>
+        <label class="cat" data-color="teal"><input type="radio" name="cat" value="No Rush"> No Rush</label>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="create-btn" id="createBtn">Create Note</button>
+      <button class="close-btn" id="closeBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
