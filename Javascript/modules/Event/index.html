@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f222;
+            
+        }
+        /* h2{
+            color:#555;
+            font-size: 10rem;
+            letter-spacing: -1rem;
+        }
+        input{
+            display:none;
+        }
+        #btn{
+            padding: 12px 22px;
+            background-color: #642626;
+            border-radius: 5px;
+
+        }
+        #btn:hover{
+            cursor: pointer;
+            background-color: #f222;
+        }  */
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #cards {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #555;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: white;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #box{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            border-color: #555;
+            position: absolute;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+        }
+        .lt{
+            text-decoration: line-through;
+        }
+        ul{
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Runs when something is clicked. -->
+     <h1 >Hello World</h1>
+     <!-- double click -->
+      <p>hello double click</p>
+
+      <!-- input -->
+    <input type="text" placeholder="Type something">
+
+    <h3 id="device">Select the Device</h3>
+    <select>
+        <option selected disabled>Choose your device</option>
+        <option value="laptop">Laptop</option>
+        <option value="desktop">Desktop</option>
+        <option value="tablet">Tablet</option>
+
+
+    </select>
+
+    <!-- for  window  -->
+    <div class="main">
+        <h2>a</h2>
+    </div>
+  
+
+    <!-- make itself input types  -->
+    <div id="main">
+        <input id="fileinp" type="file">
+        <div id="btn">
+            Upload file
+        </div>
+    </div>
+
+
+    
+    <div id="main">
+    <form id="form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="file" id="profile-pic" accept="image/*" required>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+    <div id="cards"></div>
+
+    <div id="box">
+
+
+    </div>
+
+
+<!-- Event Bubbling -->
+
+<!--
+Event bubbling means that when we click an element,
+JavaScript first checks if that element has an event listener.
+
+If there is no listener, the event moves to its parent element
+and checks for a listener there.
+
+For example, if a button is inside a nav and we add an event
+listener to the nav, clicking the button will also trigger
+the nav's event listener because the event bubbles up from
+the button to its parent.
+-->
+
+    <div id="main1">
+        <nav id="nav1">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">COntact</a>
+            <a href="">submit</a>        
+        </nav>
+    </div>
+    
+
+    <!-- another example -->
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>banana</li>
+    </ul>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
