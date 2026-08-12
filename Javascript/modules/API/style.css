@@ -1,0 +1,174 @@
+/* =========================
+   General Styling
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+
+    color: #333;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+body > div,
+body {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: rgb(45, 45, 90);
+    font-size: 40px;
+}
+
+
+/* =========================
+   Search Area
+========================= */
+
+#cityInput {
+    width: 280px;
+    padding: 14px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#cityInput::placeholder {
+    color: #888;
+}
+
+
+/* =========================
+   Search Button
+========================= */
+
+#searchBtn {
+    padding: 14px 22px;
+
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    color: #4f63c6;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #4f63c6;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Weather Card
+========================= */
+
+#weather {
+    width: 400px;
+
+    margin-top: 80px;
+    margin-left: 400px;
+    padding: 15px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Weather Heading */
+
+#weather h2 {
+    margin-bottom: 10px;
+
+    color: #4f63c6;
+
+    font-size: 26px;
+}
+
+
+/* Weather Information */
+
+#weather p {
+
+
+    font-size: 18px;
+
+    color: #555;
+}
+
+
+/* =========================
+   Message
+========================= */
+
+#message {
+    margin-top: 20px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #cityInput {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #searchBtn {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    #weather {
+        width: 90%;
+        margin-left: 11px;
+    }
+}
