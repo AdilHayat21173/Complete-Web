@@ -6,7 +6,7 @@ This project allows users to create notes by entering a **title** and **details*
 
 ## 📸 Project Screenshot
 
-![Notepad App]!(./src/assets/project.png)
+(./src/assets/project.png)
 
 ## 🚀 Features
 
