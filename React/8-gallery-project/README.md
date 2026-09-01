@@ -1,6 +1,9 @@
 # React API Pagination App
 
-![Project Demo](./assets/project.png)
+
+## 📸 Project Demo
+
+![Project Demo](./src/assets/project.png)
 
 A simple React project built to understand **`useState`**, **`useEffect`**, API calls with Axios, Props, and Pagination.
 
