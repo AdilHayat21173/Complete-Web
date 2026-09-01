@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.nav {
+  height: 70px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white;
+}
+
+.nav h3 {
+  font-size: 22px;
+}
+
+.nav div {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #00bcd4;
+}
+
+/* Home, About, Contact, Product pages */
+.page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-size: 18px;
+  color: #555;
+}
